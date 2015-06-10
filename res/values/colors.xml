@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Basic -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <!-- Common and Buttons -->
+    <color name="primary">#013986</color>
+    <color name="primary_tap">#1b4d92</color>
+    <color name="secondary">#4fc1e9</color>
+    <color name="secondary_tap">#84d7f4</color>
+    <color name="highlight">#f7941d</color>
+    <color name="highlight_tap">#ffb45a</color>
+    <color name="facebook">#3b5a9b</color>
+    <color name="facebook_tap">#617db8</color>
+    <color name="button_white_border">#b3b3b3</color>
+    <color name="button_white_text">#333333</color>
+
+    <!-- Text -->
+    <color name="text_label">#333333</color>
+    <color name="text_input">#666666</color>
+    <color name="text_hint">#dddddd</color>
+    <color name="text_positive">#25a133</color>
+    <color name="text_negative">#d03233</color>
+    <color name="text_link">#2477d7</color>
+    <color name="text_a110_search_summary">#bd750e</color>
+    <color name="text_a110_search_result_subtitle">#99a3b1</color>
+    <color name="text_summary">#bd750e</color>
+    <color name="text_subtitle">#99a3b1</color>
+
+    <!-- Transparent -->
+    <color name="black_transparent">#00000000</color>
+    <color name="black_transparent_10">#1A000000</color>
+    <color name="black_transparent_15">#26000000</color>
+    <color name="black_transparent_20">#33000000</color>
+    <color name="black_transparent_25">#40000000</color>
+    <color name="transparent_loading">#99ffffff</color>
+    <color name="transparent_listview_a110">#99ffffff</color>
+    <color name="transparent_dialog">#4D003c51</color>
+
+    <!-- Background -->
+    <color name="splash_top">#f2f2f2</color>
+    <color name="modal">#003c51</color>
+    <color name="background">#f3f3f3</color>
+    <color name="a110_search_summary">#fffff0</color>
+    <color name="a710_job_apply_rejected">#d84f4f</color>
+    <color name="a710_job_apply_interview">#f7a547</color>
+    <color name="a710_job_apply_under_screening">#498bc8</color>
+    <color name="a710_job_apply_employed">#5bb962</color>
+
+    <!-- Drop List -->
+    <color name="droplist_header_bg">#4fc1e9</color>
+    <color name="droplist_header_bg_tap">#f2fcff</color>
+    <color name="droplist_header_text">#ffffff</color>
+    <color name="droplist_item_bg">#ffffff</color>
+    <color name="droplist_item_bg_tap">#f2fcff</color>
+    <color name="droplist_item_border">#c5c5c5</color>
+
+    <!-- Header -->
+    <color name="header_background">#E8A07C</color>
+    <color name="header_title">#ffffff</color>
+
+    <!-- Footer -->
+    <color name="footer_background">#ffffff</color>
+    <color name="footer_background_tap">#999999</color>
+    <color name="footer_border_top">#999999</color>
+    <color name="footer_text_normal">#999999</color>
+    <color name="footer_text_active">#3871c0</color>
+
+    <!-- Menu -->
+    <color name="menu_background_normal">#ffffff</color>
+    <color name="menu_background_active">#f2fcff</color>
+    <color name="menu_background_tap">#84d7f4</color>
+    <color name="menu_item_border">#c5c5c5</color>
+    <color name="menu_item_text">#3871c0</color>
+
+    <!-- Dialog -->
+    <color name="dialog_text">#333333</color>
+
+    <!-- Tabs -->
+    <color name="background_tab">#ffffff</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="tab_text_inavtive">#999999</color>
+    <color name="tab_text_active">#013986</color>
+
+</resources>

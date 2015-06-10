@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- disable -->
+    <item android:drawable="@drawable/ico_item_add_tap" android:state_enabled="false"/>
+
+    <!-- Press and focus -->
+    <item android:drawable="@drawable/ico_item_add_tap" android:state_focused="true"/>
+    <item android:drawable="@drawable/ico_item_add_tap" android:state_pressed="true"/>
+
+    <!-- Normal -->
+    <item android:drawable="@drawable/ico_item_add_normal"/>
+
+</selector>

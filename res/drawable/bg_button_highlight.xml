@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- disable -->
+    <item android:drawable="@drawable/bg_button_highlight_disable" android:state_enabled="false"/>
+
+    <!-- Press and focus -->
+    <item android:drawable="@drawable/bg_button_highlight_tap" android:state_focused="true"/>
+    <item android:drawable="@drawable/bg_button_highlight_tap" android:state_pressed="true"/>
+
+    <!-- Normal -->
+    <item android:drawable="@drawable/bg_button_highlight_normal"/>
+
+</selector>

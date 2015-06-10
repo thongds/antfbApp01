@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Change padding vs. _normal when users clicks -->
+    <item android:top="1px">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/droplist_item_border" />
+
+            <corners android:topRightRadius="0dp" />
+        </shape>
+    </item>
+    <!-- Main Top color -->
+    <item android:bottom="1px">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/droplist_header_bg_tap" />
+
+            <!--
+                 <stroke
+                android:width="1px"
+                android:color="@color/button_white_border" />
+            -->
+
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+
+</layer-list>

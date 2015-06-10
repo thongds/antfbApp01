@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/footer_background_tap" android:state_focused="true"/>
+    <item android:drawable="@color/footer_background_tap" android:state_pressed="true"/>
+
+    <!-- state_selected stands lower than state_pressed means state_pressed has higher priority -->
+    <!-- move state_selected to top if do not want to change background once item is selected -->
+    <item android:drawable="@color/footer_background" android:state_selected="true"/>
+
+</selector>

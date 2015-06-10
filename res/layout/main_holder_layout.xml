@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainFragmentActivity" >
+
+        <!-- Main page -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.antifacebookapp01.component.HeaderActionBar
+                android:id="@+id/headerInMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <RelativeLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/headerInMenu"
+                android:background="@color/background" >
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- Menu page -->
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/menu_background_normal"
+            android:choiceMode="singleChoice"
+            android:clickable="true"
+            android:divider="@color/menu_item_border"
+            android:dividerHeight="1px" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Press and focus -->
+    <item android:drawable="@drawable/bg_edittext_normal_tap" android:state_pressed="true"/>
+
+    <!-- Normal -->
+    <item android:drawable="@drawable/bg_edittext_normal"/>
+
+</selector>
