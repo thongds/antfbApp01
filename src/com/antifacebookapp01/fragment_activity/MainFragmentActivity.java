@@ -20,6 +20,19 @@ public class MainFragmentActivity extends BaseFragmentActivity implements OnMenu
 	private DrawerLayout mDrawerMenuLayout;
 	/** Listview will show the data from mMenuDataList */
 	private ListView mMenuListView;
+	/** Action Setting */
+	private Action mHeaderActionSort = new Action() {
+
+		@Override
+		public void performAction(View view) {
+			// changeFragment(A120FragmentsId.A190SortPage);
+		}
+
+		@Override
+		public int getDrawable() {
+			return R.drawable.ic_action_setting;
+		}
+	};
 
 	@Override
 	public void initViews() {
@@ -52,7 +65,7 @@ public class MainFragmentActivity extends BaseFragmentActivity implements OnMenu
 			}
 		});
 
-		// mHeader.addAction(mHeaderActionSort);
+		mHeader.addAction(mHeaderActionSort);
 	}
 
 	@Override

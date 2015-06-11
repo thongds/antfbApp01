@@ -6,7 +6,7 @@
     <color name="black">#000000</color>
 
     <!-- Common and Buttons -->
-    <color name="primary">#013986</color>
+    <color name="primary">#EBEFF5</color>
     <color name="primary_tap">#1b4d92</color>
     <color name="secondary">#4fc1e9</color>
     <color name="secondary_tap">#84d7f4</color>
