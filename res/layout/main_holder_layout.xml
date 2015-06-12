@@ -47,12 +47,43 @@
                     <requestFocus />
                 </EditText>
 
+                <RadioGroup
+                    android:id="@+id/groupRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText1"
+                    android:gravity="center"
+                    android:checkedButton="@+id/normal"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/heigh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heigh"
+                        android:textColor="#0A0F14" />
+
+                    <RadioButton
+                        android:id="@+id/normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Normal"
+                        android:textColor="#0A0F14"/>
+
+                    <RadioButton
+                        android:id="@+id/low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low"
+                        android:textColor="#0A0F14" />
+                </RadioGroup>
+
                 <ListView
-                    android:id="@+id/listView1"
+                    android:id="@+id/listViewTodo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/buttonSave"
-                    android:layout_below="@+id/editText1" >
+                    android:layout_below="@+id/groupRadio" >
                 </ListView>
 
                 <Button

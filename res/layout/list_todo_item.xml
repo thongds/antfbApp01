@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    style="@style/ResultSearchItem">
+
+    <RelativeLayout
+        android:id="@+id/item_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/descriptionHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/checkboxId"
+            android:padding="@dimen/dialog_padding_medium"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="this is text of test " />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkboxId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/descriptionHolder"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/descriptionHolder" />
+    </RelativeLayout>
+
+</LinearLayout>

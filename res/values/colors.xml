@@ -28,6 +28,9 @@
     <color name="text_a110_search_result_subtitle">#99a3b1</color>
     <color name="text_summary">#bd750e</color>
     <color name="text_subtitle">#99a3b1</color>
+    <color name="heigh">#B31054</color>
+    <color name="normal">#03020A</color>
+    <color name="low">#A8A6B3</color>
 
     <!-- Transparent -->
     <color name="black_transparent">#00000000</color>
@@ -44,7 +47,7 @@
     <color name="modal">#003c51</color>
     <color name="background">#f3f3f3</color>
     <color name="a110_search_summary">#fffff0</color>
-    <color name="a710_job_apply_rejected">#d84f4f</color>
+    <color name="a710_job_apply_rejected">#B31054</color>
     <color name="a710_job_apply_interview">#f7a547</color>
     <color name="a710_job_apply_under_screening">#498bc8</color>
     <color name="a710_job_apply_employed">#5bb962</color>
