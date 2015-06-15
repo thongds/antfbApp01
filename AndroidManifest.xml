@@ -22,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.antifacebookapp01.fragment_activity.SettingFragmentActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

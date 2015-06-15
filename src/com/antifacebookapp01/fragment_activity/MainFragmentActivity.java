@@ -1,6 +1,7 @@
 package com.antifacebookapp01.fragment_activity;
 
 import java.util.ArrayList;
+import java.util.List;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +10,13 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.RadioGroup;
+import com.antifacebookapp01.adapter.ListDayObject;
+import com.antifacebookapp01.adapter.ListDayTodoAdapter;
 import com.antifacebookapp01.adapter.ListTodoAdapter;
 import com.antifacebookapp01.adapter.ListTodoObject;
 import com.antifacebookapp01.base_activity.BaseFragmentActivity;
@@ -27,15 +34,22 @@ public class MainFragmentActivity extends BaseFragmentActivity implements OnMenu
 	private ListView mMenuListView;
 	/** Hold listview */
 	private ListView mListViewTodo;
-
+	/** Add more todo button */
+	private Button mAddMore;
+	/** */
+	private EditText mEditTexTodo;
+	private RadioGroup mPropGroup;
+	private Button mSaveButton;
+	/** Menu list view */
+	private ListView mMenuList;
 	private ListTodoAdapter mListTodoAdapter;
 	private ArrayList<ListTodoObject> mArrayListTodoObject = new ArrayList<ListTodoObject>();
 	/** Action Setting */
-	private Action mHeaderActionSort = new Action() {
+	private Action mHeaderActionSetting = new Action() {
 
 		@Override
 		public void performAction(View view) {
-			// changeFragment(A120FragmentsId.A190SortPage);
+			startActivityForResult(new Intent(mContext, SettingFragmentActivity.class), 123);
 		}
 
 		@Override
@@ -95,14 +109,51 @@ public class MainFragmentActivity extends BaseFragmentActivity implements OnMenu
 			}
 		});
 
-		mHeader.addAction(mHeaderActionSort);
+		mHeader.addAction(mHeaderActionSetting);
 	}
 
 	@Override
 	public void onICreate(Bundle savedInstanceState) {
 		setContentView(R.layout.main_holder_layout);
+		mAddMore = (Button) findViewById(R.id.btnAdd);
+		mEditTexTodo = (EditText) findViewById(R.id.editText1);
+		mPropGroup = (RadioGroup) findViewById(R.id.groupRadio);
+		mSaveButton = (Button) findViewById(R.id.buttonSave);
+		mMenuList = (ListView) findViewById(R.id.left_drawer);
+		generateMenuList();
+		mAddMore.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				mEditTexTodo.setVisibility(View.VISIBLE);
+				mPropGroup.setVisibility(View.VISIBLE);
+				mSaveButton.setVisibility(View.VISIBLE);
+			}
+		});
+		mSaveButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				mEditTexTodo.setVisibility(View.GONE);
+				mPropGroup.setVisibility(View.GONE);
+				mSaveButton.setVisibility(View.GONE);
+			}
+		});
 		initViews();
 		initHeader();
+	}
+
+	public void generateMenuList() {
+		List<ListDayObject> listMenu = new ArrayList<ListDayObject>();
+		for (int i = 0; i < 30; i++) {
+			if (i % 2 == 0) {
+				listMenu.add(new ListDayObject(1, "12/12/1989", 0));
+			} else {
+				listMenu.add(new ListDayObject(1, "12/12/1989", 2));
+			}
+		}
+		ListDayTodoAdapter menuAdapter = new ListDayTodoAdapter(mContext, listMenu);
+		mMenuList.setAdapter(menuAdapter);
 	}
 
 	@Override

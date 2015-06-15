@@ -98,6 +98,7 @@
     <string name="dialog_logout_title">Logout</string>
     <string name="dialog_logout_msg">Are you sure to logout this account</string>
     <string name="a110_header">Todo List</string>
+     <string name="setting_header">Setting</string>
     <string name="a110_notif">There are %s positions match your request.</string>
     <string name="a110_notif_none">There is no position match your request.</string>
     <string name="a510_notif">%s positions are recommended for you.</string>

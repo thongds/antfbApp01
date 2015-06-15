@@ -30,7 +30,7 @@
                 android:background="#ffffff" >
 
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/btnAdd"
                     style="@style/ButtonPrimary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -40,8 +40,10 @@
                     android:id="@+id/editText1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/button1"
+                    android:layout_below="@+id/btnAdd"
                     android:layout_centerHorizontal="true"
+                    android:minHeight="84dp"
+                    android:visibility="gone"
                     android:ems="10" >
 
                     <requestFocus />
@@ -54,7 +56,8 @@
                     android:layout_below="@+id/editText1"
                     android:gravity="center"
                     android:checkedButton="@+id/normal"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
 
                     <RadioButton
                         android:id="@+id/heigh"
@@ -92,6 +95,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
+                    android:visibility="gone"
                     android:text="Save" />
             </RelativeLayout>
         </RelativeLayout>
